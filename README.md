@@ -1,6 +1,6 @@
 # Associate Python Developer
 
-- Introduction to Python for Developers
+- [Introduction to Python for Developers](/1_intro-to-python/)
 - Intermediate Python for Developers
 - Python Toolbox
 - Data Types in Python
