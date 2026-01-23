@@ -1,0 +1,24 @@
+recipe = {
+    "pasta": 500,
+    "tomatoes": 400,
+    "garlic": 15,
+    "basil": 20,
+    "olive_oil": 30,
+    "salt": 10,
+}
+pantry = {"pasta": 500, "tomatoes": 800, "olive_oil": 100, "garlic": 15}
+scale_factor = 2.5
+
+shopping_list = []
+
+# Loop through each ingredient and amount in the recipe
+for ingredient, amount in recipe.items():
+    # Calculate the amount needed for the party
+    needed_amount = amount * scale_factor
+
+    # Check if we need to buy this ingredient
+    if ingredient not in pantry or needed_amount > pantry[ingredient]:
+        shopping_list.append(ingredient)
+
+print("Shopping list for your party:")
+print(shopping_list)
